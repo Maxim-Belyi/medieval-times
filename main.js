@@ -1,4 +1,4 @@
-import { Header } from "./js/Header.js";
+import { Header } from "./js/header.js";
 import { initSlider } from "./js/slider.js";
 import { activePage } from "./js/activePage.js"
 
