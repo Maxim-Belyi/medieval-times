@@ -1,0 +1,44 @@
+@use '../helpers' as *;
+
+.feast {
+    padding-top: fluid(1000, 400);
+    background: url(../images/feast-bg.avif) center/cover no-repeat;
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        padding-left: fluid(113, 10);
+        margin: 0;
+    }
+
+    &__description {
+        padding-top: fluid(104, 40);
+        padding-left: fluid(134, 5);
+        padding-right: fluid(140, 5);
+        padding-bottom: fluid(236, 40);
+        background-color: var(--color-gray-alt);
+    }
+
+    &__title {
+
+        &>p {
+            font-family: var(--font-family-bodony);
+            font-weight: 700;
+            font-size: fluid(32, 20);
+            line-height: 125%;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    &__subtitle {
+        padding-top: fluid(68, 20);
+
+        &>p {
+            font-family: var(--font-family-gotham-book);
+            font-weight: 400;
+            font-size: fluid(24, 15);
+            line-height: 208%;
+            letter-spacing: 0.1em;
+        }
+    }
+}

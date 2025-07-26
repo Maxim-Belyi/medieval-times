@@ -1,0 +1,47 @@
+@use '../helpers' as *;
+
+.join {
+    background-color: var(--color-red);
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 54% 1fr;
+        padding-top: fluid(107, 20);
+        padding-left: fluid(90, 5);
+        padding-right: fluid(185, 5);
+        padding-bottom: fluid(130, 20);
+
+        @include tablet {
+            grid-template-columns: auto;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-size: fluid(100, 24);
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: -0.05em;
+        padding-bottom: fluid(40, 20);
+    }
+
+    &__subtitle {
+        &>p {
+            font-family: var(--font-family-gotham-book);
+
+            &:first-child {
+                padding-bottom: fluid(20, 10);
+            }
+        }
+    }
+
+    &__button {
+        margin-top: fluid(114, 20);
+        margin-left: fluid(370, 40);
+
+        @include tablet {
+            margin-inline: auto;
+            padding: rem(20) rem(60);
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@use '../helpers' as *;
+
+.divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: var(--border-white);
+    border-bottom: var(--border-white);
+    letter-spacing: 0.1em;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: rem(30);
+        padding-top: rem(56);
+        color: var(--color-red);
+
+        &::after,
+        &::before {
+            content: '';
+            flex-grow: 1;
+            border: var(--border-red);
+            width: fluid(268, 20);
+            height: 1px;
+        }
+
+        &--about {
+            color:var(--color-white); 
+            padding-bottom: fluid(72, 20);
+
+            &::after,
+            &::before {
+                border: var(--border-white);
+            }
+        }
+    }
+
+    &__subtitle {
+        display: flex;
+        text-align: center;
+        line-height: 222%;
+        padding: fluid(46, 20) rem(10) fluid(100, 30) rem(10);
+        font-size: fluid(18, 14);
+        max-width: rem(614);
+    }
+}

@@ -1,0 +1,28 @@
+@use './helpers' as *;
+@use 'variables';
+@use 'normalize';
+@use 'fonts';
+@use 'globals';
+@use 'utils';
+
+@use './blocks/header';
+@use './blocks/section-title';
+@use './blocks/section-description';
+@use './blocks/button';
+@use './blocks/burger-button';
+@use './blocks/hero';
+@use './blocks/divider';
+@use './blocks/welcome';
+@use './blocks/footer';
+@use './blocks/contest';
+@use './blocks/cards';
+@use './blocks/swiper';
+@use './blocks/training';
+@use './blocks/horses';
+@use './blocks/join';
+@use './blocks/falconry';
+@use './blocks/falconeer';
+@use './blocks/dietary';
+@use './blocks/nutrition';
+@use './blocks/feast';
+@use './blocks/active';

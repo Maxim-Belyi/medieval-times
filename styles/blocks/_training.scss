@@ -1,0 +1,49 @@
+@use '../helpers' as *;
+
+.training {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-light-alt);
+    padding: fluid(154, 20) fluid(166, 10) fluid(250, 20) fluid(142, 5);
+    color: var(--color-total-black);
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+
+    &__title {
+        font-family: var(--font-family-gotham);
+        font-weight: 700;
+        font-size: fluid(96, 24);
+        border-right: var(--border-black);
+        letter-spacing: 0.05em;
+        padding-right: rem(5);
+
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            border-right: none;
+            border-bottom: var(--border-black);
+            padding-bottom: rem(20);
+        }
+    }
+
+    &__subtitle {
+        &>p {
+            font-family: var(--font-family-gotham-book);
+            line-height: 222%;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding-left: fluid(82, 20);
+
+            &:not(:last-child) {
+                padding-bottom: fluid(30, 10);
+            }
+
+            @include mobile {
+                padding-top: rem(40);
+                text-align: center;
+            }
+        }
+    }
+}

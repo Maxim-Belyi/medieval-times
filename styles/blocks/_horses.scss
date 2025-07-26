@@ -1,0 +1,40 @@
+@use '../helpers' as *;
+
+.horses {
+    display: grid;
+    grid-template-columns: fluid(529, 200) 1fr;
+    border-top: var(--border-white);
+    border-bottom: var(--border-white);
+    padding-inline: fluid(229, 5);
+    padding-top: fluid(20, 5);
+    padding-bottom: fluid(20, 5);
+
+    @include mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-inline: rem(5);
+        align-items: center;
+    }
+
+    &__text-wrapper {
+        padding: fluid(155, 40) fluid(128, 20) fluid(178, 20) fluid(140, 20);
+
+        @include mobile {
+            text-align: center;
+            padding: rem(20);
+        }
+
+        &>p {
+            font-family: var(--font-family-gotham-book);
+            font-weight: 400;
+
+            &:not(:first-child) {
+                padding-bottom: fluid(60, 10);
+            }
+        }
+    }
+
+    &__title {
+        padding-bottom: fluid(74, 20);
+    }
+}

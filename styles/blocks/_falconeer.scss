@@ -1,0 +1,39 @@
+@use '../helpers' as *;
+
+.falconeer {
+    background-color: var(--color-light-alt);
+    text-align: center;
+
+    &__wrapper {
+        color: var(--color-total-black);
+        padding-top: fluid(253, 60);
+        padding-inline: fluid(115, 5);
+        padding-bottom: fluid(294, 60);
+    }
+
+    &__title {
+        padding-bottom: fluid(64, 20);
+        font-family: var(--font-family-gotham);
+        font-weight: 400;
+        font-size: fluid(32, 22);
+        line-height: 75%;
+        letter-spacing: 0.1em;
+        border-bottom: var(--border-black);
+    }
+
+    &__description {
+        padding-top: fluid(48, 20);
+        padding-inline: fluid(340, 0);
+    
+
+         @include tablet {
+           padding-inline: 0;
+        }
+
+        &>p {
+            &:not(:last-child) {
+                padding-bottom: fluid(60, 10);
+            }
+        }
+    }
+}

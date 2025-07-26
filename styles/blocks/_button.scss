@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.button {
+    text-transform: uppercase;
+    color: var(--color-light);
+    border: none;
+    white-space: nowrap;
+
+    &--red {
+        background-color: var(--color-red);
+        border-radius: 27px;
+        font-size: fluid(16, 12);
+        padding: rem(12) rem(40);
+        font-weight: 700;
+        line-height: 35px;
+
+        &:hover {
+            background-color: var(--color-red-hover);
+        }
+
+        @include tablet {
+            padding: rem(2) rem(16);
+        }
+    }
+
+    &--svg {
+        background-color: transparent;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    &--hero {
+        margin-top: fluid(106, 48);
+    }
+
+    &-square--white {
+        padding: rem(20) rem(30);
+        font-family: var(--font-family-bodony);
+        font-weight: 700;
+        font-size: fluid(48, 18);
+        letter-spacing: 0.05em;
+        border: var(--border-white);
+        max-width: rem(426);
+        max-height: rem(124);
+    }
+}

@@ -1,0 +1,49 @@
+@use '../helpers' as *;
+
+.dietary {
+    display: grid;
+    grid-template-columns: auto 56%;
+    align-items: center;
+    padding-top: fluid(127, 80);
+    padding-bottom: fluid(108, 80);
+
+    @include tablet {
+        display: flex;
+        text-align: center;
+        &>img {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        padding-left: fluid(112, 5);
+        padding-right: fluid(60, 10);
+    }
+
+    &__description {
+        padding-right: fluid(44, 10);
+
+        &>p {
+            font-size: fluid(24, 16);
+            &:first-child {
+                padding-top: fluid(90, 20);
+            }
+
+            &:not(:last-child) {
+                padding-bottom: fluid(40, 10);
+            }
+
+            &:nth-last-child(2) {
+                padding-bottom: fluid(120, 40);
+            }
+
+            &:last-child {
+                font-family: var(--font-family-gotham);
+                font-weight: 500;
+                font-size: fluid(16, 14);
+                line-height: 250%;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}

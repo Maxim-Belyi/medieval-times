@@ -1,0 +1,52 @@
+@use './helpers' as *;
+
+:root {
+    --container-width: 1920px;
+    --transition-duration: 0.4s;
+    --container-padding-x: 92px;
+
+    --swiper-pagination-bullet-width: 17px;
+    --swiper-pagination-bullet-height: 17px;
+    --swiper-pagination-top: 90%;
+    --swiper-pagination-color: var(--color-light-alt);
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-inactive-color: transparent;
+
+    @include tablet {
+        --swiper-pagination-bullet-width: 10px;
+        --swiper-pagination-bullet-height: 10px;
+        --swiper-pagination-top: 86%;
+    }
+
+    --color-light: #F2F2F2;
+    --color-light-alt: #FFFFFF;
+    --color-light-accent: #cac2c2;
+
+    --color-red: #A22330;
+    --color-red-hover: #E11A2F;
+    --color-red-stroke: #FF0000;
+    --color-red-light: #DE152A;
+    
+    --color-dark: #050505;
+    --color-total-black: #000000;
+    --color-grey: #111111;
+    --color-grey-alt:#161616;
+    --color-dark-opacity: rgba(5, 5, 5, 0.9);
+
+    --font-family-gotham: 'Gotham', sans-serif;
+    --font-family-gotham-book: 'Gotham Book', sans-serif;
+    --font-family-bodony: 'BodoniXT', sans-serif;
+    --font-family-inter: 'Inter', sans-serif;
+    --font-family-bodony-mt: 'Bodoni MT' , sans-serif;
+
+    --text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    --border-black: 2px solid var(--color-total-black);
+    --border-white: 1px solid var(--color-light);
+    --border-red: 1px solid var(--color-red);
+
+    --box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    --fill: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.66) 100%);
+    --fill-alt: linear-gradient(114deg, rgba(0, 0, 0, 0.56) 0%, #000 100%);
+
+}

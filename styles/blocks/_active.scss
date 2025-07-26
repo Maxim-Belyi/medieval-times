@@ -1,0 +1,8 @@
+@use '../helpers' as *;
+
+nav a.active {
+  color: var(--color-red);
+  text-decoration: underline;
+  text-underline-offset: rem(5);
+  text-decoration-thickness: rem(2);
+}

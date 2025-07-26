@@ -1,0 +1,42 @@
+@use '../helpers' as *;
+
+.burger-button {
+    z-index: 2;
+
+    @include tablet-above {
+        @include visually-hidden;
+    }
+
+    &>svg {
+        width: rem(24);
+        height: rem(24);
+    }
+
+    &>svg *[fill] {
+        fill: currentColor;
+    }
+
+    &__sword {
+        &--right {
+            rotate: -45deg;
+        }
+
+        &--left {
+            rotate: -45deg;
+        }
+    }
+
+    &.is-active {
+        .burger-button {
+            &__sword {
+                &--right {
+                    transform: translateX(-15px) translateY(-10px) rotate(-45deg);
+                }
+
+                &--left {
+                    transform: translateY(15px) translateY(-10px) rotate(45deg);
+                }
+            }
+        }
+    }
+}

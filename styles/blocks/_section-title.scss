@@ -1,0 +1,9 @@
+@use '../helpers' as *;
+
+.section-title {
+    font-family: var(--font-family-gotham);
+    font-size: fluid(64, 20);
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-transform: none;
+}

@@ -1,0 +1,100 @@
+@use '../helpers' as *;
+
+.header {
+    background: url(../images/header-background1.avif) center/cover no-repeat;
+
+    &--experience {
+        background: url(../images/header-background2.webp) center/cover no-repeat;
+    }
+
+    &--about {
+        background: url(../images/queen-on-chair.webp) center/cover no-repeat;
+    }
+
+    &--creatures {
+        background: url(../images/header-background3.avif) center/cover no-repeat;
+    }
+
+    &--shop {
+        background: url(../images/header-background4.avif) center/cover no-repeat;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: fluid(180, 10);
+        background-color: var(--color-dark);
+        box-shadow: var(--box-shadow);
+        background: var(--color-dark-opacity);
+
+        @include desktop {
+            padding-inline: fluid(20, 10);
+        }
+    }
+
+    &>a {
+        padding: rem(10) 0;
+    }
+
+    &__nav {
+        padding-left: rem(40);
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            font-size: fluid(16, 14);
+            gap: fluid(50, 10);
+            white-space: nowrap;
+
+            @include desktop {
+                gap: rem(20);
+            }
+        }
+
+        @include tablet {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 80%;
+            height: rem(100);
+            z-index: 2;
+            visibility: hidden;
+        }
+    }
+
+    &__button-wrapper {
+        display: flex;
+        gap: rem(30);
+        padding-left: fluid(342, 20);
+        padding-top: rem(5);
+        padding-bottom: rem(5);
+
+        @include desktop {
+            padding-left: rem(40);
+            padding-left: rem(5);
+            gap: rem(10);
+        }
+    }
+}
+
+header {
+    .is-active .header__nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        left: 0px;
+        visibility: visible;
+        background-color: var(--color-dark-opacity);
+        transition: top 0.4s ease-out;
+        padding: 0;
+
+        &-list {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: rem(20);
+        }
+    }
+}

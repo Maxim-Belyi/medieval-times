@@ -1,0 +1,11 @@
+@use '../helpers' as *;
+
+.section-description {
+    &>p {
+        font-family: var(--font-family-gotham-book);
+        font-weight: 400;
+        font-size: fluid(24, 18);
+        line-height: 208%;
+        letter-spacing: 0.1em;
+    }
+}

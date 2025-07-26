@@ -1,0 +1,51 @@
+@use '../helpers' as *;
+
+.nutrition {
+    background-color: var(--color-red);
+    padding-bottom: fluid(184, 60);
+
+    &__text-wrapper {
+        padding-top: fluid(140, 60);
+        padding-left: fluid(112, 5);
+    }
+
+    &__title {
+        font-family: var(--font-family-gotham);
+        font-weight: 400;
+        font-size: fluid(48, 24);
+        letter-spacing: -0.05em;
+    }
+
+    &__description {
+        padding-top: fluid(114, 20);
+        padding-right: fluid(268, 5);
+    }
+
+    &__links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(fluid(600, 290), 1fr));
+        padding-top: fluid(150, 40);
+        row-gap: fluid(60, 20);
+        column-gap: rem(20);
+        padding-inline: fluid(256, 10);
+
+        @include desktop {
+            padding-inline: fluid(80, 10)
+        }
+
+        &>li {
+
+            &>a {
+                display: flex;
+                align-items: center;
+                gap: fluid(38, 12);
+                text-transform: capitalize;
+                text-decoration: underline;
+                font-family: var(--font3);
+                font-weight: 400;
+                font-size: fluid(32, 18);
+                letter-spacing: -0.05em;
+            }
+        }
+    }
+}

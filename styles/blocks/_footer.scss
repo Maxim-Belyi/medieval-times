@@ -1,0 +1,101 @@
+@use '../helpers' as *;
+
+.footer {
+    &__wrapper {
+        background-color: var(--color-red);
+        border: var(--border-red);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        @include tablet {
+            grid-template-columns: fluid(480, 280) 1fr;
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content max-content;
+        }
+    }
+
+    &__address {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: fluid(126, 20) fluid(116, 20) fluid(182, 20) fluid(445, 20);
+
+        @include tablet {
+            padding: rem(20);
+        }
+
+        @include mobile {
+            align-items: center;
+            border-bottom: var(--border-white);
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            right: rem(84);
+            top: rem(64);
+            background-color: var(--color-light-alt);
+            height: fluid(340, 20);
+            width: rem(1);
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+        &-city {
+            &>p {
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: fluid(26, 18);
+                line-height: 104%;
+            }
+        }
+
+        &-street {
+            padding-top: rem(32);
+
+            &>p {
+                font-size: fluid(16, 14);
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+    }
+
+    &__links {
+        display: grid;
+        grid-template-columns: auto auto;
+        font-family: var(--font-family-inter);
+        font-weight: 400;
+        font-size: rem(16);
+        padding-top: fluid(95, 20);
+        line-height: 150%;
+
+        @include tablet {
+            padding: rem(20);
+        }
+
+        @include mobile {
+            justify-items: center;
+            padding-inline: rem(5);
+            padding-top: rem(20);
+        }
+
+        &--first-col {
+            display: flex;
+            flex-direction: column;
+            padding-top: rem(30);
+            gap: fluid(20, 10);
+        }
+
+        &--second-col {
+            display: flex;
+            flex-direction: column;
+            gap: fluid(30, 5);
+        }
+    }
+}

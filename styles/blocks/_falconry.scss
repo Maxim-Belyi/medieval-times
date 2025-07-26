@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.falconry {
+    position: relative;
+    background: url(../images/falcon.avif) center/cover no-repeat;
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: fluid(120, 80);
+        height: fluid(60, 40);
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: rem(-10);
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 47'%3E%3Cpath d='M55 47L0.4 0.5L109.6 0.5L55 47Z' fill='%23A22330'/%3E%3C/svg%3E") top/cover no-repeat;
+    }
+
+    &__wrapper {
+        padding-top: fluid(543, 280);
+        padding-left: fluid(92, 10);
+        padding-bottom: fluid(80, 20);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: fluid(137, 26);
+    }
+
+    &__subtitle {
+        font-family: var(--font-family-bodony);
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: fluid(57, 18);
+    }
+}
