@@ -6,12 +6,12 @@
 <br>
 ### 🛠️ Стек технологий
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://camo.githubusercontent.com/c587a3bc846443ec1d1675ad4dc630495fc7ec473e74cbce391552a9c53b857c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d48544d4c352d6f72616e67653f6c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465)
+![CSS3](https://camo.githubusercontent.com/a5aeb17d7ec1bb24ff43862059cc5a97e3b60e4ff27057ed10ba4925603f9f0f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d435353332d626c75653f6c6f676f3d63737333266c6f676f436f6c6f723d7768697465)
 ![Sass](https://camo.githubusercontent.com/74d5655386be146493165f4b1e4a0b455621f62c3c6b256efe90895071bb2c3a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d534353532d4343363639393f6c6f676f3d73617373266c6f676f436f6c6f723d7768697465)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![JavaScript](https://camo.githubusercontent.com/b28dbfaba05bd8a8a5bb5c4750fc77e1d754f92e571ce10ada92ef061aa31780/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4a6176615363726970742d79656c6c6f773f6c6f676f3d6a617661736372697074266c6f676f436f6c6f723d626c61636b)
+![Vite](https://camo.githubusercontent.com/fcdc4659ef977c26f585f311eb79d17d888dd22e80bb4c7df89d7a232b387249/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d566974652d3634364346463f6c6f676f3d76697465266c6f676f436f6c6f723d7768697465)
+![Figma]([https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white](https://camo.githubusercontent.com/43fdee2966c2dd2d6ca3f7d64be839aae57e6ae657ca660aee1cbd2499d89b91/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4669676d612d4632344531453f6c6f676f3d6669676d61266c6f676f436f6c6f723d7768697465))
 
 <br>
 <br>
@@ -21,12 +21,12 @@
 
 1.  **Клонируйте репозиторий:**
     ```bash
-    git clone https://github.com/ВАШ_НИКНЕЙМ/НАЗВАНИЕ_РЕПОЗИТОРИЯ.git
+    git clone https://github.com/Maxim-Belyi/medieval-times.git
     ```
 
 2.  **Перейдите в папку проекта:**
     ```bash
-    cd НАЗВАНИЕ_РЕПОЗИТОРИЯ
+    cd medieval-times
     ```
 
 3.  **Установите зависимости:**
