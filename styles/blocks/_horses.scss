@@ -6,8 +6,8 @@
     border-top: var(--border-white);
     border-bottom: var(--border-white);
     padding-inline: fluid(229, 5);
-    padding-top: fluid(20, 5);
-    padding-bottom: fluid(20, 5);
+    padding-top: rem(20);
+    padding-bottom: fluid(20, 15);
 
     @include mobile {
         display: flex;

@@ -549,7 +549,7 @@ header .is-active .header__nav-list {
 }
 .welcome__text-wrapper {
   padding-right: clamp(1.25rem, -0.7692307692rem + 8.9743589744vw, 10rem);
-  padding-top: clamp(1.25rem, -0.1490384615rem + 6.2179487179vw, 7.3125rem);
+  padding-top: clamp(2.5rem, 1.3894230769rem + 4.9358974359vw, 7.3125rem);
   padding-left: clamp(1.25rem, -1.3173076923rem + 11.4102564103vw, 12.375rem);
   text-align: center;
   letter-spacing: 0.1em;
@@ -580,7 +580,7 @@ header .is-active .header__nav-list {
   font-size: clamp(1.125rem, 0.9230769231rem + 0.8974358974vw, 2rem);
   padding-top: clamp(1.25rem, -0.5096153846rem + 7.8205128205vw, 8.875rem);
   color: var(--color-red);
-  padding-bottom: clamp(1.25rem, 0.9615384615rem + 1.2820512821vw, 2.5rem);
+  padding-bottom: clamp(1.875rem, 1.7307692308rem + 0.641025641vw, 2.5rem);
 }
 @media (max-width: 1650px) {
   .welcome__footer {
@@ -699,7 +699,7 @@ header .is-active .header__nav-list {
 }
 
 .contest {
-  padding-top: clamp(0rem, -1.2692307692rem + 5.641025641vw, 5.5rem);
+  padding-top: clamp(2.5rem, 1.8076923077rem + 3.0769230769vw, 5.5rem);
   padding-left: clamp(0rem, -0.3173076923rem + 1.4102564103vw, 1.375rem);
   border-bottom: var(--border-white);
 }
@@ -996,8 +996,8 @@ header .is-active .header__nav-list {
   border-top: var(--border-white);
   border-bottom: var(--border-white);
   padding-inline: clamp(0.3125rem, -2.9182692308rem + 14.358974359vw, 14.3125rem);
-  padding-top: clamp(0.3125rem, 0.0961538462rem + 0.9615384615vw, 1.25rem);
-  padding-bottom: clamp(0.3125rem, 0.0961538462rem + 0.9615384615vw, 1.25rem);
+  padding-top: 1.25rem;
+  padding-bottom: clamp(0.9375rem, 0.8653846154rem + 0.3205128205vw, 1.25rem);
 }
 @media (max-width: 767px) {
   .horses {
@@ -1234,6 +1234,11 @@ header .is-active .header__nav-list {
   padding-right: clamp(0.3125rem, -1.6346153846rem + 8.6538461538vw, 8.75rem);
   padding-bottom: clamp(2.5rem, -0.3269230769rem + 12.5641025641vw, 14.75rem);
   background-color: var(--color-gray-alt);
+}
+@media (max-width: 767px) {
+  .feast__description {
+    text-align: center;
+  }
 }
 .feast__title > p {
   font-family: var(--font-family-bodony);

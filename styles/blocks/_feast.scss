@@ -17,6 +17,10 @@
         padding-right: fluid(140, 5);
         padding-bottom: fluid(236, 40);
         background-color: var(--color-gray-alt);
+
+        @include mobile {
+            text-align: center;
+        }
     }
 
     &__title {

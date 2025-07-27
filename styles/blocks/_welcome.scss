@@ -12,7 +12,7 @@
 
     &__text-wrapper {
         padding-right: fluid(160, 20);
-        padding-top: fluid(117, 20);
+        padding-top: fluid(117, 40);
         padding-left: fluid(198, 20);
         text-align: center;
         letter-spacing: 0.1em;
@@ -44,7 +44,7 @@
         font-size: fluid(32, 18);
         padding-top: fluid(142, 20);
         color: var(--color-red);
-        padding-bottom: fluid(40, 20);
+        padding-bottom: fluid(40, 30);
 
         @include desktop {
             padding-top: rem(30);
