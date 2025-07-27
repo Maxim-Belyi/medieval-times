@@ -5,6 +5,7 @@
 Вёрстка многостраничного лендинга, посвященного шоу <a href="https://www.medievaltimes.com/" target="_blank">
 "Medieval Times".</a>Проект создан для демонстрации навыков адаптивной верстки, работы с макетом и стилизации.
 <br>
+<br>
 <p align="center">
   <img src="images/medieval-title.avif" alt="app screenshot" width="800">
 </p>
