@@ -1,4 +1,3 @@
-
 <h1> <a href="https://maxim-belyi.github.io/medieval-times/index.html" target="_blank">
 <br>
 <br>
