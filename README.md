@@ -1,5 +1,5 @@
 <h1> <a href="https://maxim-belyi.github.io/medieval-times/index.html" target="_blank">
-📝 Medieval Times: Landing Page 🏰 </a>
+📝 Medieval Times: Landing Page 🏰 </a> </h1>
 <br>
 <br>
 Вёрстка многостраничного лендинга, посвященного шоу <a href="https://www.medievaltimes.com/" target="_blank">
