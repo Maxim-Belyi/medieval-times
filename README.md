@@ -1,10 +1,14 @@
-<h1> <a href="https://maxim-belyi.github.io/medieval-times/index.html" target="_blank">
+###<h1> <a href="https://maxim-belyi.github.io/medieval-times/index.html" target="_blank">
 <br>
 <br>
+    
 📝 Medieval Times: Landing Page 🏰 </a>
 Вёрстка многостраничного лендинга, посвященного шоу "Medieval Times". Проект создан для демонстрации навыков адаптивной верстки, работы с макетом и стилизации.
 
 <br>
+<p align="center">
+  <img src="images/medieval-title.avif" alt="app screenshot" width="800">
+</p>
 
 ### 🛠️ Стек технологий
 
